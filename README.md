@@ -227,7 +227,7 @@ implementation 'com.google.android.flexbox:flexbox:3.0.0'
 ## 📸 Screenshots
 | Home | Search | Detail | Watchlist |
 |------|--------|--------|-----------|
-| ![Home](gambar/home.png) | ![Search](gambar/search.png) | ![Detail](gambar/detail.png) | ![Watchlist](gambar/watchlist.png) |
+| ![Home](gambar/home.jpg) | ![Search](gambar/search.jpg) | ![Detail](gambar/detail.jpg) | ![Watchlist](gambar/watchlist.jpg) |
 ---
 
 ---
