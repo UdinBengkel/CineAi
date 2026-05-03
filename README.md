@@ -93,6 +93,7 @@ Halaman daftar film yang telah disimpan oleh user.
 **Komponen UI:**
 - **Header** berisi jumlah film di watchlist (contoh: "5 film dalam watchlist")
 - **Tombol "🤖 Rekomendasi AI"** — mengirim data watchlist ke Gemini AI untuk analisis selera
+  > ⚠️ **Catatan:** Fitur ini masih dalam tahap pengembangan (in progress). Integrasi Gemini AI sudah diimplementasikan namun belum sepenuhnya stabil.
 - **Card hasil AI** (muncul setelah tombol ditekan) berisi:
   - Analisis selera film user dalam 2-3 kalimat
   - Daftar 5-8 rekomendasi film beserta alasan dan genre
@@ -115,7 +116,7 @@ Halaman daftar film yang telah disimpan oleh user.
 | ▶️ Trailer YouTube | Prioritas trailer resmi bahasa Indonesia |
 | 📺 Streaming / Tiket | Cek otomatis ketersediaan di streaming atau bioskop |
 | 🔖 Watchlist Offline | Tersimpan lokal menggunakan Room Database |
-| 🤖 Analisis AI | Gemini AI menganalisis selera dari watchlist |
+| 🤖 Analisis AI | Gemini AI menganalisis selera dari watchlist *(in progress)* |
 | 📍 GPS Lokasi | Menampilkan lokasi user di splash screen |
 | 🌙 Dark Theme | Tema gelap dengan palet warna sinematik |
 
@@ -213,7 +214,7 @@ implementation 'com.google.android.flexbox:flexbox:3.0.0'
 | Fase 1 | Persiapan & Desain UI | ✅ COMPLETE |
 | Fase 2 | Networking & API Integration | ✅ COMPLETE |
 | Fase 3 | Tampilan List & Gambar | ✅ COMPLETE |
-| Fase 4 | Detail & Finishing | 🔛 ON GOING |
+| Fase 4 | Detail & Finishing | 🔄 IN PROGRESS |
 
 ---
 
