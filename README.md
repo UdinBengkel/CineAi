@@ -7,15 +7,10 @@
 ## 👤 Identitas Mahasiswa
 
 | Keterangan | Detail |
-
 |---|---|
-
 | **Nama** | Syafarudiansya |
-
 | **NIM** | 312410381 |
-
 | **Kelas** | I241A |
-
 | **Mata Kuliah** | Pemrograman Mobile |
 
 ---
