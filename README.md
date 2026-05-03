@@ -218,6 +218,20 @@ implementation 'com.google.android.flexbox:flexbox:3.0.0'
 
 ---
 
+---
+## 🎥 Demo Aplikasi
+[![Demo CineAI](https://drive.google.com/file/d/1GIUxYy0OgKcTdPUWwtHvFBxu9_TQKSl7/view?usp=sharing)
+---
+
+---
+## 📸 Screenshots
+| Home | Search | Detail | Watchlist |
+|------|--------|--------|-----------|
+| ![Home](gambar/home.png) | ![Search](gambar/search.png) | ![Detail](gambar/detail.png) | ![Watchlist](gambar/watchlist.png) |
+---
+
+---
+
 ## 📄 Lisensi
 
 Project ini dibuat untuk keperluan tugas akademik di **Universitas Pelita Bangsa**.  
