@@ -220,7 +220,8 @@ implementation 'com.google.android.flexbox:flexbox:3.0.0'
 
 ---
 ## 🎥 Demo Aplikasi
-[![Demo CineAI](https://drive.google.com/file/d/1GIUxYy0OgKcTdPUWwtHvFBxu9_TQKSl7/view?usp=sharing)
+
+🔗 [Klik di sini untuk menonton demo aplikasi CineAI](https://drive.google.com/file/d/1GIUxYy0OgKcTdPUWwtHvFBxu9_TQKSl7/view?usp=sharing)
 ---
 
 ---
