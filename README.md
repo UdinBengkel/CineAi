@@ -139,7 +139,7 @@ Halaman daftar film yang telah disimpan oleh user.
 | Image Loading | Glide 4 |
 | Database Lokal | Room (SQLite) |
 | Lokasi | Google Play Services — FusedLocationProvider |
-| AI | Google Gemini 2.0 Flash API |
+| AI | Google Gemini 2.0 Flash API (Belum Work)|
 | Data Film | TMDB API v3 |
 
 ---
@@ -179,7 +179,7 @@ Halaman daftar film yang telah disimpan oleh user.
 
 ### Cara Mendapatkan API Key
 - **TMDB:** Daftar gratis di [themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)
-- **Gemini AI:** Buat key gratis di [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+- **Gemini AI:** Buat key gratis di [aistudio.google.com/apikey](https://aistudio.google.com/apikey) 
 
 ---
 
@@ -211,15 +211,14 @@ implementation 'com.google.android.flexbox:flexbox:3.0.0'
 
 ## 📋 Progress SCRUM (ClickUp)
 
-🔗 **Link ClickUp:** [ISI LINK CLICKUP KAMU]
+🔗 **Link ClickUp:** [https://app.clickup.com/90181768480/v/g/2kzm1590-458]
 
 | Fase | Nama | Status |
 |---|---|---|
 | Fase 1 | Persiapan & Desain UI | ✅ COMPLETE |
 | Fase 2 | Networking & API Integration | ✅ COMPLETE |
 | Fase 3 | Tampilan List & Gambar | ✅ COMPLETE |
-| Fase 4 | Detail & Finishing | ✅ COMPLETE |
-| Fase 5 | Fitur Lanjutan (AI, GPS, Streaming) | ✅ COMPLETE |
+| Fase 4 | Detail & Finishing | 🔛 ON GOING |
 
 ---
 
