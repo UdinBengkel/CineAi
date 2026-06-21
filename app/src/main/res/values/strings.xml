@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">CineAI</string>
+    <string name="app_name_prefix">CINE</string>
+    <string name="app_name_suffix">AI</string>
+    <string name="app_tagline">Mau Nonton Apa Nich?</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_search">Cari</string>
+    <string name="nav_watchlist">Watchlist</string>
+
+    <!-- Home sections -->
+    <string name="label_ai_pick">✦ Pilihan AI Untuk Mu</string>
+    <string name="section_recommended">Film yang Mungkin Kamu Suka</string>
+    <string name="section_recommended_sub">Dari genre favoritmu</string>
+    <string name="section_now_playing">Tayang Sekarang</string>
+    <string name="section_popular">Populer</string>
+    <string name="section_top_rated">Rating Tertinggi</string>
+    <string name="see_all">Lihat Semua →</string>
+
+    <!-- Search / Discover -->
+    <string name="page_search_title">JELAJAHI</string>
+    <string name="search_hint">Film, genre, sutradara…</string>
+    <string name="browse_by_genre">Berdasarkan Genre</string>
+    <string name="trending_searches">TRENDING SEARCHES</string>
+    <string name="filter">Filter</string>
+    <string name="apply_filter">Terapkan</string>
+    <string name="clear_filter">Reset</string>
+
+    <!-- Detail film -->
+    <string name="btn_watch_now">Mulai Nonton</string>
+    <string name="btn_trailer">Trailer</string>
+    <string name="btn_ticket">Mulai Nonton</string>
+    <string name="btn_watchlist_add">+ Watchlist</string>
+    <string name="btn_watchlist_added">✓ Tersimpan</string>
+    <string name="label_synopsis">Sinopsis</string>
+    <string name="label_similar">Film Serupa</string>
+    <string name="label_cast">Pemeran</string>
+
+    <!-- Watchlist -->
+    <string name="page_watchlist_title">Watchlist Ku</string>
+    <string name="watchlist_empty_title">Masih sepi, nih.</string>
+    <string name="watchlist_empty_sub">Tambahkan film yang ingin kamu tonton</string>
+    <string name="watchlist_empty_hint">Setelah menambahkan film, rekomendasi akan muncul di Beranda</string>
+    <string name="tab_all">Semua</string>
+    <string name="tab_watching">Menonton</string>
+    <string name="tab_done">Selesai</string>
+    <string name="tab_saved">Disimpan</string>
+
+    <!-- Genres -->
+    <string name="genre_action">Aksi</string>
+    <string name="genre_scifi">Sci-Fi</string>
+    <string name="genre_comedy">Komedi</string>
+    <string name="genre_horror">Horor</string>
+    <string name="genre_drama">Drama</string>
+    <string name="genre_romance">Romansa</string>
+    <string name="genre_animation">Animasi</string>
+    <string name="genre_thriller">Kengerian</string>
+
+</resources>

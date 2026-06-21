@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ═══════════════════════════════════════════
+         BRAND
+         ═══════════════════════════════════════════ -->
+    <color name="brand_red">#E50914</color>
+    <color name="brand_red_dark">#B20710</color>
+    <color name="brand_red_dim">#4DE50914</color>   <!-- 30% opacity merah untuk glow -->
+    <color name="brand_red_subtle">#1AE50914</color> <!-- 10% opacity untuk bg tint -->
+
+    <!-- ═══════════════════════════════════════════
+         BACKGROUND HIERARCHY
+         ═══════════════════════════════════════════ -->
+    <color name="bg_primary">#141414</color>      <!-- layar utama — charcoal warm -->
+    <color name="bg_secondary">#1F1F1F</color>    <!-- card, bottom nav -->
+    <color name="bg_elevated">#2A2A2A</color>     <!-- chip, input, sheet -->
+    <color name="bg_overlay">#CC000000</color>    <!-- overlay gelap di atas gambar -->
+    <color name="bg_scrim">#99000000</color>      <!-- scrim ringan -->
+
+    <!-- ═══════════════════════════════════════════
+         SURFACE / CARD
+         ═══════════════════════════════════════════ -->
+    <color name="surface">#1F1F1F</color>
+    <color name="surface_variant">#2A2A2A</color>
+    <color name="surface_dim">#171717</color>
+
+    <!-- ═══════════════════════════════════════════
+         TEXT
+         ═══════════════════════════════════════════ -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_tertiary">#737373</color>
+    <color name="text_disabled">#4D4D4D</color>
+    <color name="text_on_brand">#FFFFFF</color>
+
+    <!-- ═══════════════════════════════════════════
+         GENRE CARD COLORS (Search Discover page)
+         ═══════════════════════════════════════════ -->
+    <color name="genre_action">#C0392B</color>
+    <color name="genre_scifi">#2980B9</color>
+    <color name="genre_comedy">#27AE60</color>
+    <color name="genre_horror">#8E44AD</color>
+    <color name="genre_drama">#D35400</color>
+    <color name="genre_romance">#E91E8C</color>
+    <color name="genre_animation">#F39C12</color>
+    <color name="genre_thriller">#16A085</color>
+    <color name="genre_documentary">#2C3E50</color>
+    <color name="genre_family">#1ABC9C</color>
+
+    <!-- ═══════════════════════════════════════════
+         UI COMPONENTS
+         ═══════════════════════════════════════════ -->
+    <color name="divider">#2A2A2A</color>
+    <color name="stroke">#333333</color>
+    <color name="ripple_light">#33FFFFFF</color>
+    <color name="ripple_brand">#33E50914</color>
+
+    <!-- Bottom nav -->
+    <color name="nav_active">#E50914</color>
+    <color name="nav_inactive">#737373</color>
+    <color name="nav_background">#0F0F0F</color>
+
+    <!-- Rating star -->
+    <color name="rating_star">#E50914</color>
+
+    <!-- Status badges -->
+    <color name="badge_watching">#E50914</color>
+    <color name="badge_completed">#27AE60</color>
+    <color name="badge_saved">#F39C12</color>
+
+    <!-- Splash glow -->
+    <color name="splash_glow_center">#4DE50914</color>
+    <color name="splash_glow_edge">#00000000</color>
+
+    <!-- Legacy aliases (agar kode Java tidak perlu diubah) -->
+    <color name="primary">@color/brand_red</color>
+    <color name="primary_dark">@color/brand_red_dark</color>
+    <color name="background">@color/bg_primary</color>
+    <color name="card_background">@color/surface</color>
+    <color name="surface_variant_alias">@color/surface_variant</color>
+    <color name="text_hint">@color/text_tertiary</color>
+    <color name="gold">@color/rating_star</color>
+    <color name="gold_dark">@color/brand_red_dark</color>
+    <color name="teal">#00C9A7</color>
+    <color name="bottom_nav_background">@color/nav_background</color>
+    <color name="bottom_nav_selected">@color/nav_active</color>
+    <color name="bottom_nav_unselected">@color/nav_inactive</color>
+    <color name="overlay_gradient_start">#00000000</color>
+    <color name="overlay_gradient_end">#FF000000</color>
+
+</resources>

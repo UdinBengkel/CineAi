@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ═══════════════════════════════════════
+         SPACING SCALE
+         ═══════════════════════════════════════ -->
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+
+    <!-- ═══════════════════════════════════════
+         CORNER RADIUS
+         ═══════════════════════════════════════ -->
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_xl">20dp</dimen>
+    <dimen name="radius_pill">100dp</dimen>
+
+    <!-- ═══════════════════════════════════════
+         POSTER SIZES
+         ═══════════════════════════════════════ -->
+    <!-- Home horizontal -->
+    <dimen name="poster_home_width">120dp</dimen>
+    <dimen name="poster_home_height">180dp</dimen>
+
+    <!-- Search grid -->
+    <dimen name="poster_grid_width">160dp</dimen>
+    <dimen name="poster_grid_height">100dp</dimen>  <!-- landscape untuk list row -->
+
+    <!-- Search list row poster -->
+    <dimen name="poster_list_width">56dp</dimen>
+    <dimen name="poster_list_height">80dp</dimen>
+
+    <!-- Watchlist item -->
+    <dimen name="poster_watchlist_width">80dp</dimen>
+    <dimen name="poster_watchlist_height">110dp</dimen>
+
+    <!-- Detail -->
+    <dimen name="poster_detail_width">110dp</dimen>
+    <dimen name="poster_detail_height">160dp</dimen>
+
+    <!-- ═══════════════════════════════════════
+         LAYOUT DIMENSIONS
+         ═══════════════════════════════════════ -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="bottom_nav_height">64dp</dimen>
+    <dimen name="backdrop_height">240dp</dimen>
+    <dimen name="hero_backdrop_height">300dp</dimen>
+    <dimen name="splash_logo_size">80dp</dimen>
+    <dimen name="page_horizontal_padding">20dp</dimen>
+
+    <!-- ═══════════════════════════════════════
+         COMPONENT SIZES
+         ═══════════════════════════════════════ -->
+    <dimen name="chip_height">32dp</dimen>
+    <dimen name="genre_card_height">90dp</dimen>
+    <dimen name="icon_btn_size">44dp</dimen>
+    <dimen name="avatar_size">44dp</dimen>
+    <dimen name="rating_dot_size">6dp</dimen>
+    <dimen name="progress_bar_height">3dp</dimen>
+    <dimen name="red_accent_line_width">36dp</dimen>
+    <dimen name="red_accent_line_height">3dp</dimen>
+
+    <!-- ═══════════════════════════════════════
+         TEXT SIZES
+         ═══════════════════════════════════════ -->
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_md">14sp</dimen>
+    <dimen name="text_lg">16sp</dimen>
+    <dimen name="text_xl">20sp</dimen>
+    <dimen name="text_2xl">24sp</dimen>
+    <dimen name="text_3xl">28sp</dimen>
+    <dimen name="text_hero">32sp</dimen>
+
+</resources>
