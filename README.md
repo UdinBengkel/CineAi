@@ -15,7 +15,7 @@ Aplikasi Android untuk menemukan, menyimpan, dan mendapatkan rekomendasi film se
 ![TMDB](https://img.shields.io/badge/TMDB-API-blue)
 ![Material3](https://img.shields.io/badge/Material3-UI-red)
 ![Room](https://img.shields.io/badge/Room-Database-green)
-[![Download](https://img.shields.io/badge/Download_APK-v1.0-red?style=for-the-badge)](https://github.com/UdinBengkel/CineAi/releases/tag/v0.1-debug)
+[![Download](https://img.shields.io/badge/Download-red?style=for-the-badge)](https://github.com/UdinBengkel/CineAi/releases/tag/v0.1-debug)
 
 </div>
 
