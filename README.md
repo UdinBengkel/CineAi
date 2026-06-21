@@ -14,6 +14,7 @@ Aplikasi Android untuk menemukan, menyimpan, dan mendapatkan rekomendasi film se
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![TMDB](https://img.shields.io/badge/TMDB-API-blue)
 [![DOWNLOAD APK](https://img.shields.io/badge/Download-V1.0-green)](https://github.com/UdinBengkel/CineAi/releases/tag/1.0-debug)
+[![DEMO](https://img.shields.io/badge/Demo-Here-yellow)](https://drive.google.com/file/d/1GIUxYy0OgKcTdPUWwtHvFBxu9_TQKSl7/view)
 </div>
 
 ---
@@ -89,11 +90,13 @@ Aplikasi ini memungkinkan pengguna untuk:
 
 ---
 
-# 🎥 Demo
-
-🎬 Demo Video:
-
-https://drive.google.com/file/d/1GIUxYy0OgKcTdPUWwtHvFBxu9_TQKSl7/view
+## 📋 Progress SCRUM [**(ClickUp)**](https://app.clickup.com/90181768480/v/li/901811634479)
+| Fase | Nama | Status |
+|---|---|---|
+| Fase 1 | Persiapan & Desain UI | ✅ COMPLETE |
+| Fase 2 | Networking & API Integration | ✅ COMPLETE |
+| Fase 3 | Tampilan List & Gambar | ✅ COMPLETE |
+| Fase 4 | Detail & Finishing | ✅ COMPLETE |
 
 ---
 
@@ -107,6 +110,7 @@ https://drive.google.com/file/d/1GIUxYy0OgKcTdPUWwtHvFBxu9_TQKSl7/view
 | Mata Kuliah | Pemrograman Mobile |
 
 ---
+
 
 # 📄 License
 
