@@ -13,9 +13,7 @@ Aplikasi Android untuk menemukan, menyimpan, dan mendapatkan rekomendasi film se
 ![Android](https://img.shields.io/badge/Android-7.0+-red)
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![TMDB](https://img.shields.io/badge/TMDB-API-blue)
-![Material3](https://img.shields.io/badge/Material3-UI-red)
-![Room](https://img.shields.io/badge/Room-Database-green)
-[![Download](https://img.shields.io/badge/Download-red?style=for-the-badge)](https://github.com/UdinBengkel/CineAi/releases/tag/v0.1-debug)
+[![DOWNLOAD APK](https://img.shields.io/badge/Download-V1.0-green)]([https://github.com/UdinBengkel/CineAi/releases](https://github.com/UdinBengkel/CineAi/releases/tag/v0.1-debug))
 
 </div>
 
@@ -89,48 +87,6 @@ Aplikasi ini memungkinkan pengguna untuk:
 | Database | Room |
 | Location | FusedLocationProvider |
 | Movie Data | TMDB API |
-
----
-
-# 🚀 Installation
-
-### Clone Repository
-
-```bash
-git clone https://github.com/UdinBengkel/CineAi.git
-```
-
-### Open Android Studio
-
-```text
-File > Open > CineAi
-```
-
-### Setup API Key
-
-Copy:
-
-```bash
-cp local.properties.example local.properties
-```
-
-Isi:
-
-```properties
-TMDB_API_KEY=YOUR_API_KEY
-```
-
-Lalu klik:
-
-```text
-Sync Now
-```
-
-dan jalankan:
-
-```text
-Shift + F10
-```
 
 ---
 
