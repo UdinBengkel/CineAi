@@ -1,0 +1,34 @@
+# ══════════════════════════════════════════
+# Android Studio / Gradle standard
+# ══════════════════════════════════════════
+*.iml
+.gradle
+/local.properties
+
+# Ignore seluruh folder .idea (config IDE, tidak perlu di-push)
+.idea/
+
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# ══════════════════════════════════════════
+# API Keys / Secrets — JANGAN PERNAH DI-PUSH
+# ══════════════════════════════════════════
+secrets.properties
+api_keys.properties
+
+# ══════════════════════════════════════════
+# Build outputs
+# ══════════════════════════════════════════
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# ══════════════════════════════════════════
+# Log files
+# ══════════════════════════════════════════
+*.log

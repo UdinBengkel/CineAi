@@ -1,0 +1,17 @@
+# ══════════════════════════════════════════════════════
+# CONTOH local.properties — JANGAN diisi API key asli di file ini!
+# ══════════════════════════════════════════════════════
+#
+# Cara pakai:
+# 1. Copy file ini, rename jadi "local.properties"
+#    (di root folder proyek, sejajar dengan folder app/)
+# 2. Isi sdk.dir sesuai lokasi Android SDK di komputermu
+# 3. Isi TMDB_API_KEY dengan API key asli kamu
+# 4. File "local.properties" otomatis di-ignore oleh git
+#    (sudah diatur di .gitignore), jadi aman tidak ke-push
+#
+# Dapatkan API key gratis di:
+# https://www.themoviedb.org/settings/api
+
+sdk.dir=/path/to/your/android/sdk
+TMDB_API_KEY=masukkan_api_key_tmdb_disini

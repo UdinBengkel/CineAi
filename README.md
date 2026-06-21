@@ -1,106 +1,100 @@
-# 🎬 CineAI — Aplikasi Rekomendasi Film Berbasis AI
+# 🎬 CineAI — Aplikasi Rekomendasi Film
 
-> Aplikasi Android untuk menemukan, menyimpan, dan mendapatkan rekomendasi film secara personal menggunakan kecerdasan buatan (AI).
+> Aplikasi Android untuk menemukan, menyimpan, dan mendapatkan rekomendasi film secara personal berdasarkan preferensi genre pengguna.
 
 ---
 
 ## 👤 Identitas Mahasiswa
 
-| Keterangan | Detail |
-|---|---|
-| **Nama** | Syafarudiansya |
-| **NIM** | 312410381 |
-| **Kelas** | I241A |
+| Keterangan      | Detail             |
+| --------------- | ------------------ |
+| **Nama**        | Syafarudiansya     |
+| **NIM**         | 312410381          |
+| **Kelas**       | I241A              |
 | **Mata Kuliah** | Pemrograman Mobile |
 
 ---
 
 ## 📱 Deskripsi Aplikasi
 
-**CineAI** adalah aplikasi rekomendasi film berbasis Android yang memanfaatkan data real-time dari **TMDB API** (The Movie Database) dan kecerdasan buatan dari **Google Gemini AI**. Aplikasi ini dirancang untuk membantu pengguna menemukan film yang sesuai dengan selera mereka secara personal dan otomatis.
+**CineAI** adalah aplikasi rekomendasi film berbasis Android yang memanfaatkan data real-time dari **TMDB API** (The Movie Database). Aplikasi ini membantu pengguna menemukan, mencari, dan menyimpan film favorit, serta secara otomatis memberikan rekomendasi film baru berdasarkan pola genre dari watchlist pengguna.
 
 ---
 
 ## 🖥️ Tampilan UI (User Interface)
 
 ### 1. Splash Screen
+
 Halaman pembuka aplikasi yang muncul saat pertama kali app dibuka.
 
 **Komponen UI:**
-- Ikon film emoji sebagai logo aplikasi
-- Nama aplikasi **"CineAI"** dengan ukuran besar dan bold
-- Tagline *"Temukan Film Terbaik Untukmu"*
-- **Lokasi GPS user** yang ditampilkan secara otomatis (contoh: `📍 Kabupaten Bekasi 🇮🇩`) menggunakan FusedLocationProvider
-- Loading indicator (ProgressBar) selama aplikasi memuat
+- Logo aplikasi berbentuk kotak merah dengan ikon segitiga play putih di tengah
+- Nama aplikasi **"CINE`AI`"** — bagian "CINE" putih, bagian "AI" merah
+- Tagline *"YOUR AI MOVIE GUIDE"*
+- **Lokasi GPS user** yang ditampilkan secara otomatis (contoh: `📍 Kabupaten Bekasi 🇮🇩`) menggunakan FusedLocationProvider, hasil reverse-geocoding koordinat menjadi nama daerah dan kode negara
+- Garis loading merah tipis dengan animasi sebelum masuk ke halaman utama
 
 > Fitur GPS meminta izin lokasi dari user. Jika ditolak, lokasi default "Indonesia 🇮🇩" ditampilkan.
 
 ---
 
 ### 2. Beranda (Home)
-Halaman utama yang menampilkan daftar film dalam beberapa kategori.
+
+Halaman utama yang menampilkan daftar film dalam beberapa kategori, tanpa toolbar — nama aplikasi tampil langsung di bagian atas konten.
 
 **Komponen UI:**
-- **Toolbar** dengan judul "CineAI" di bagian atas
 - **SwipeRefreshLayout** untuk memperbarui data dengan gestur tarik ke bawah
-- **Seksi "🎯 Film [Genre] Untukmu"** *(muncul otomatis jika watchlist tidak kosong)* — menampilkan rekomendasi film berdasarkan genre favorit user dari watchlist, dengan badge "Dari Watchlist"
-- **Seksi "🎬 Tayang Sekarang"** — film yang sedang tayang di bioskop
-- **Seksi "🔥 Populer"** — film paling banyak ditonton
-- **Seksi "⭐ Rating Tertinggi"** — film dengan rating terbaik
-- Setiap seksi menggunakan **RecyclerView horizontal scroll**
-- Setiap kartu film menampilkan: poster, judul, tahun rilis, dan badge rating bintang emas
+- **Seksi "✦ Film yang Mungkin Kamu Suka"** *(muncul otomatis hanya jika watchlist tidak kosong)* — rekomendasi film dihitung berdasarkan genre yang paling sering muncul di watchlist pengguna, lalu diambil dari TMDB Discover API
+- **Seksi "Tayang Sekarang"** — film yang sedang tayang di bioskop
+- **Seksi "Trending Now"** — film paling populer
+- **Seksi "Rating Tertinggi"** — film dengan rating terbaik
+- Setiap seksi memiliki tautan **"Lihat Semua →"** dan menggunakan **RecyclerView horizontal scroll**
+- Setiap kartu film menampilkan: poster, judul, tahun rilis, dan badge rating bintang merah
 - **Bottom Navigation Bar** dengan 3 tab: Beranda, Cari, Watchlist
 
 ---
 
-### 3. Pencarian (Search)
-Halaman untuk mencari film dan menyaring berdasarkan filter.
+### 3. Pencarian (Search / Discover)
+
+Halaman untuk menjelajah dan mencari film.
 
 **Komponen UI:**
-- **Search bar** (TextInputEditText) dengan ikon search dan placeholder "Cari judul film…"
-- **Tombol Filter** di sebelah kanan search bar untuk membuka/menutup panel filter
-- **Panel Filter** (collapsible) berisi:
-  - Spinner dropdown **tahun rilis** (dari tahun sekarang hingga 1990)
-  - **Chip group genre** yang bisa dipilih satu genre (Aksi, Drama, Komedi, dll.)
-  - Tombol **"Terapkan"** dan **"Reset"**
-- **Teks jumlah hasil** (contoh: "245 hasil ditemukan")
-- **RecyclerView grid 2 kolom** untuk menampilkan hasil pencarian/filter
-- Pencarian berjalan secara **real-time** dengan jeda 600ms (debounce)
+- Judul halaman **"DISCOVER"** dengan tipografi besar dan tebal
+- **Search bar** flat berbentuk pill dengan ikon pencarian dan ikon filter terintegrasi
+- **Grid genre berwarna** (Aksi, Sci-Fi, Komedi, Horor, Drama, Animasi, Thriller, Romansa) yang tampil sebagai tampilan default sebelum pengguna mengetik
+- **Panel Filter** (collapsible) berisi spinner tahun rilis dan chip group genre
+- Pencarian berjalan **real-time** dengan jeda 600ms (debounce)
+- Hasil pencarian/filter ditampilkan dalam **RecyclerView grid 2 kolom**
 
 ---
 
 ### 4. Detail Film
-Halaman lengkap informasi satu film yang dibuka dari mana saja.
+
+Halaman lengkap informasi satu film.
 
 **Komponen UI:**
-- **CollapsingToolbarLayout** — backdrop film mengecil saat di-scroll
-- **Gambar backdrop** film sebagai header dengan efek parallax
-- **Poster film** (vertikal) di pojok kiri bawah header
-- Informasi film: **judul**, **tagline** (miring), **rating bintang emas**, **tahun rilis**, **durasi**
-- **Chip group genre** (tidak bisa diklik, hanya informasi)
-- **3 tombol aksi:**
-  - `▶ Trailer` — membuka YouTube untuk menonton trailer
-  - `▶ Tonton Sekarang` / `🎟 Beli Tiket` — membuka platform streaming atau situs beli tiket bioskop (otomatis tergantung status film)
-  - `+ Watchlist` / `✓ Di Watchlist` — menyimpan atau menghapus dari watchlist
+- **CollapsingToolbarLayout** dengan backdrop film yang mengecil saat di-scroll, dilapisi gradient gelap
+- **Poster film** vertikal di sebelah informasi utama
+- Informasi film: **judul**, **tagline**, **rating bintang merah**, **tahun rilis**, **durasi**
+- **Chip group genre** sebagai informasi (tidak dapat diklik)
+- **Tombol aksi:**
+  - `Tonton Sekarang` / `Beli Tiket` — tombol utama merah, otomatis menyesuaikan apakah film tersedia di platform streaming atau masih tayang di bioskop
+  - Ikon trailer — membuka YouTube untuk menonton trailer resmi
+  - Ikon watchlist (bookmark) — toggle simpan/hapus dari watchlist
 - **Sinopsis** lengkap film
 - **RecyclerView horizontal** berisi film-film rekomendasi serupa di bagian bawah
 
 ---
 
 ### 5. Watchlist
-Halaman daftar film yang telah disimpan oleh user.
+
+Halaman daftar film yang telah disimpan oleh pengguna, murni sebagai daftar simpan tanpa fitur tracking status tontonan.
 
 **Komponen UI:**
-- **Header** berisi jumlah film di watchlist (contoh: "5 film dalam watchlist")
-- **Tombol "🤖 Rekomendasi AI"** — mengirim data watchlist ke Gemini AI untuk analisis selera
-  > ⚠️ **Catatan:** Fitur ini masih dalam tahap pengembangan (in progress). Integrasi Gemini AI sudah diimplementasikan namun belum sepenuhnya stabil.
-- **Card hasil AI** (muncul setelah tombol ditekan) berisi:
-  - Analisis selera film user dalam 2-3 kalimat
-  - Daftar 5-8 rekomendasi film beserta alasan dan genre
-  - Tombol silang untuk menutup card
-- **RecyclerView list vertikal** menampilkan setiap film di watchlist dengan: poster kecil, judul, rating, tahun, dan cuplikan sinopsis
-- Tombol **hapus (×)** di setiap item untuk menghapus film dari watchlist
-- **Empty state** (jika watchlist kosong): ikon film besar + teks "Watchlist kamu masih kosong"
+- Judul halaman **"MY WATCHLIST"** dengan jumlah film tersimpan di bawahnya
+- **RecyclerView list vertikal** menampilkan setiap film: poster, judul, tahun, rating, dan cuplikan sinopsis
+- Tombol **hapus (✕)** di setiap item
+- **Empty state**: ikon bookmark redup, teks penjelasan, serta info bahwa menambahkan film ke watchlist akan memicu rekomendasi otomatis di halaman Beranda
 
 ---
 
@@ -108,17 +102,17 @@ Halaman daftar film yang telah disimpan oleh user.
 
 | Fitur | Keterangan |
 |---|---|
-| 🏠 Beranda Multi-Seksi | Now Playing, Popular, Top Rated, dan rekomendasi personal |
-| 🎯 Rekomendasi Personal | Otomatis berdasarkan genre dari watchlist user |
-| 🔍 Pencarian Real-time | Debounce 600ms, tidak membebani server |
+| 🏠 Beranda Multi-Seksi | Tayang Sekarang, Trending Now, Rating Tertinggi |
+| 🎯 Rekomendasi Berbasis Genre | Dihitung otomatis dari frekuensi genre pada watchlist, ditampilkan di Beranda |
+| 🔍 Pencarian Real-time | Debounce 600ms, ringan untuk server |
+| 🎨 Discover by Genre | Grid genre berwarna untuk eksplorasi cepat |
 | 🎛️ Filter Lanjutan | Filter berdasarkan genre dan tahun rilis |
 | 🎬 Detail Film Lengkap | Backdrop, poster, sinopsis, genre chip, rating |
-| ▶️ Trailer YouTube | Prioritas trailer resmi bahasa Indonesia |
-| 📺 Streaming / Tiket | Cek otomatis ketersediaan di streaming atau bioskop |
+| ▶️ Trailer YouTube | Prioritas trailer resmi berbahasa Indonesia, fallback ke Inggris |
+| 📺 Streaming / Tiket | Deteksi otomatis ketersediaan di platform streaming atau bioskop |
 | 🔖 Watchlist Offline | Tersimpan lokal menggunakan Room Database |
-| 🤖 Analisis AI | Gemini AI menganalisis selera dari watchlist *(in progress)* |
-| 📍 GPS Lokasi | Menampilkan lokasi user di splash screen |
-| 🌙 Dark Theme | Tema gelap dengan palet warna sinematik |
+| 📍 GPS Lokasi | Menampilkan lokasi pengguna di splash screen via reverse-geocoding |
+| 🌙 Dark Cinematic Theme | Palet warna gelap dengan aksen merah |
 
 ---
 
@@ -135,7 +129,6 @@ Halaman daftar film yang telah disimpan oleh user.
 | Image Loading | Glide 4 |
 | Database Lokal | Room (SQLite) |
 | Lokasi | Google Play Services — FusedLocationProvider |
-| AI | Google Gemini 2.0 Flash API (Belum Work)|
 | Data Film | TMDB API v3 |
 
 ---
@@ -152,36 +145,40 @@ Halaman daftar film yang telah disimpan oleh user.
 
 1. **Clone repository ini**
    ```bash
-   git clone https://github.com/[USERNAME]/CineAI.git
+   git clone https://github.com/UdinBengkel/CineAi.git
    ```
 
 2. **Buka di Android Studio**
    ```
-   File > Open > pilih folder CineAI
+   File > Open > pilih folder CineAi
    ```
 
-3. **Isi API Keys** di `app/build.gradle`
-   ```groovy
-   buildConfigField "String", "TMDB_API_KEY", "\"API_KEY_TMDB_KAMU\""
+3. **Setup API Key TMDB**
+
+   Copy file `local.properties.example` menjadi `local.properties` di root folder proyek:
+   ```bash
+   cp local.properties.example local.properties
    ```
-   Dan di `AiRecommendationHelper.java`:
-   ```java
-   private static final String GEMINI_API_KEY = "API_KEY_GEMINI_KAMU";
+   Lalu isi dengan API key TMDB kamu:
+   ```properties
+   TMDB_API_KEY=isi_api_key_asli_disini
    ```
+
+   > File `local.properties` tidak ikut ter-push ke GitHub (sudah diatur di `.gitignore`) sehingga API key tetap aman.
 
 4. **Sync Gradle** → klik **Sync Now**
 
 5. **Run** → `Shift + F10` atau klik tombol ▶
 
-### Cara Mendapatkan API Key
-- **TMDB:** Daftar gratis di [themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)
-- **Gemini AI:** Buat key gratis di [aistudio.google.com/apikey](https://aistudio.google.com/apikey) 
+### Cara Mendapatkan API Key TMDB
+
+Daftar gratis di [themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)
 
 ---
 
 ## 📦 Dependencies Utama
 
-```groovy
+```gradle
 // UI & Material
 implementation 'com.google.android.material:material:1.12.0'
 implementation 'androidx.recyclerview:recyclerview:1.3.2'
@@ -207,32 +204,32 @@ implementation 'com.google.android.flexbox:flexbox:3.0.0'
 
 ## 📋 Progress SCRUM (ClickUp)
 
-🔗 **Link ClickUp:** [https://app.clickup.com/90181768480/v/g/2kzm1590-458]
+🔗 **Link ClickUp:** [https://app.clickup.com/90181768480/v/li/901811634479](https://app.clickup.com/90181768480/v/li/901811634479)
 
 | Fase | Nama | Status |
 |---|---|---|
 | Fase 1 | Persiapan & Desain UI | ✅ COMPLETE |
 | Fase 2 | Networking & API Integration | ✅ COMPLETE |
 | Fase 3 | Tampilan List & Gambar | ✅ COMPLETE |
-| Fase 4 | Detail & Finishing | 🔄 IN PROGRESS |
+| Fase 4 | Detail & Finishing | ✅ COMPLETE |
 
 ---
 
----
 ## 🎥 Demo Aplikasi
-[![Demo CineAI](https://drive.google.com/file/d/1GIUxYy0OgKcTdPUWwtHvFBxu9_TQKSl7/view?usp=sharing)
----
+
+🔗 [Klik di sini untuk menonton demo aplikasi CineAI](https://drive.google.com/file/d/1GIUxYy0OgKcTdPUWwtHvFBxu9_TQKSl7/view?usp=sharing)
 
 ---
+
 ## 📸 Screenshots
+
 | Home | Search | Detail | Watchlist |
-|------|--------|--------|-----------|
-| ![Home](gambar/home.png) | ![Search](gambar/search.png) | ![Detail](gambar/detail.png) | ![Watchlist](gambar/watchlist.png) |
----
+|---|---|---|---|
+| ![Home](gambar/home.jpg) | ![Search](gambar/search.jpg) | ![Detail](gambar/detail.jpg) | ![Watchlist](gambar/watchlist.jpg) |
 
 ---
 
 ## 📄 Lisensi
 
-Project ini dibuat untuk keperluan tugas akademik di **Universitas Pelita Bangsa**.  
+Project ini dibuat untuk keperluan tugas akademik di **Universitas Pelita Bangsa**.
 Data film disediakan oleh [The Movie Database (TMDB)](https://www.themoviedb.org/).
