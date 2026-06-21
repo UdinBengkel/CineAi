@@ -13,8 +13,7 @@ Aplikasi Android untuk menemukan, menyimpan, dan mendapatkan rekomendasi film se
 ![Android](https://img.shields.io/badge/Android-7.0+-red)
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![TMDB](https://img.shields.io/badge/TMDB-API-blue)
-[![DOWNLOAD APK](https://img.shields.io/badge/Download-V1.0-green)]([https://github.com/UdinBengkel/CineAi/releases](https://github.com/UdinBengkel/CineAi/releases/tag/1.0-debug))
-
+[![DOWNLOAD APK](https://img.shields.io/badge/Download-V1.0-green)]([[https://github.com/UdinBengkel/CineAi/releases](https://github.com/UdinBengkel/CineAi/releases/tag/1.0-debug)])
 </div>
 
 ---
